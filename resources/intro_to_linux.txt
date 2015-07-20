@@ -1,0 +1,69 @@
+This is an intro to using Linux. We will go over basic skills and plotting data using gnuplot. 
+
+Download the data file from [INSERT LINK HERE]. Open up a terminal from the menu or using the keyboard shortcut Ctrl-Alt-t. Type (without the $)
+
+    $ ls
+
+which lists the contents of the current directory. The file that we downloaded will be in your Downloads folder. To get into this folder type 
+
+    $ cd Downloads
+
+where 'cd' is the command to change directories and Downloads is the name of the folder that you want to get into. To see the name of the directory you are in type 
+
+    $ pwd
+
+which gives the full path to the directory. Check that the data file downloaded correctly and then go back to your home directory. Do to this run the commands
+
+    $ls
+    $ cd ../
+
+where cd ../ means move up a directory. We are going to copy the data file to a new directory so we can do some analysis on it. To do so we need to do a few things first. First go into your documents folder then create a directory called balloon_data. To do so run the commands
+
+    $ cd Documents
+    $ mkdir balloon_data
+
+where mkdir is the command to make a directory. Go into balloon_data and get the path to the directory by running
+
+    $ cd balloon_data
+    $ pwd
+
+Go back to your home directory by typing
+
+    $ cd
+
+with no arguments. To copy the balloon data to balloon_data go into your downloads and run the command 
+
+    $ cp space_data.csv /path/to/balloon_data
+
+which used the command cp to copy files. If we want to move the file instead run
+
+    $ mv space_data.csv /path/to/balloon_data
+
+Go to the directory with the data where we will look at the file. We can look at the file in a variety of ways. Run the commands
+
+    $ cd /path/to/balloon_data
+    $ head space_data.csv
+    $ tail space_data.csv 
+    $ less space_data.csv
+
+Press 'q' to quit less. If we want to edit the file we will need to use a text editor. 
+
+First let's play around with using vim which is a command line text editor. Run the command 
+
+    $ vi example.txt
+
+to create a file called example.txt. Press i or Insert to go into insert mode and start typing. Type whatever you want. To save and quit type 'Esc + : + wq'. Open the file again and add something else. To quit without saving type 'Esc + : + q!'. Let's get rid of our example file. To do so type 
+
+    $ rm example.txt
+
+however you should be careful when using rm! There is no recycle bin in Linux so once a file is gone you cannot recover it. 
+
+We are now almost ready to plot our balloon data. First we need to install gnuplot. To do so run
+
+    $ sudo apt-get install gnuplot-x11
+
+
+
+
+
+
