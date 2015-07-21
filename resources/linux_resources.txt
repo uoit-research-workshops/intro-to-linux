@@ -1,0 +1,14 @@
+Google
+
+Stack Overflow
+http://stackoverflow.com/
+
+Reddit
+https://www.reddit.com/r/linux4noobs
+https://www.reddit.com/r/linux/
+
+Gnuplot colours
+http://www.uni-hamburg.de/Wiss/FB/15/Sustainability/schneider/gnuplot/colors.htm
+
+More examples
+http://gnuplot.sourceforge.net/demo/
