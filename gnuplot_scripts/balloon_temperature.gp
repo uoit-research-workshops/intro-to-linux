@@ -20,8 +20,11 @@ set yrange [-65:50]
 set style line 1 lc rgb '#F44336' lt 1 lw 2
 set style line 2 lc rgb '#ff9980' lt 1 lw 2 
 
+#Set the title
 set title "Internal payload temperature"
 
+#Plot the data
+#You can do math with the column data
 plot "./space_data.csv" u 2:16 ls 1 title "Internal temperature" w lines, \
 "./space_data.csv" u 2:(($37+100)/7.3) ls 2 title "External temperature" w lines
 
