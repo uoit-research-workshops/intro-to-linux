@@ -9,7 +9,7 @@ set datafile separator ","
 set xtics nomirror
 set ytics nomirror
 
-set ylabel 'Temperature [Celsius]
+set ylabel "Temperature [Celsius]"
 set xlabel "Time from launch [min]"
 
 #Set data ranges
